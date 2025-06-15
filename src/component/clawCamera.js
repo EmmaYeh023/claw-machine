@@ -52,7 +52,7 @@ function ClawCamera({clawPos, setClawPos, isClawDown, setIsClawDown}){
                 console.log("is Win?", isWin);
 
                 setIsClawDown(true);
-                gsap.to(clawPos, {y: -0.9, duration: 3, onComplete: ()=>{
+                gsap.to(clawPos, {y: -0.7, duration: 3, onComplete: ()=>{
                     gsap.to(clawPos, {y: -0.2, duration: 2, onComplete: ()=>{
                         setIsClawDown(false);
                     }});
